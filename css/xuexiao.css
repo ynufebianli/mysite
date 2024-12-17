@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+   background-image: linear-gradient(to right,
+    #ffe9b3de,
+    #e3c297ce,
+    #ecd9a7,
+    #f8edcfd8,
+    #fbf3dd);
+}
+
+.tou {
+    position: fixed;
+    top: 0;
+    left: 0;
+   padding: 1rem 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo {
+   position: relative;
+   color: rgba(20, 19, 19, 0.811);
+}
+
+.biao {
+   font-size: 1rem;
+   font-weight: 800;
+   letter-spacing: 1px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+}
+
+.biao li {
+    position: relative;
+}
+
+.biao a {
+    position: relative;
+    margin: 0 10px;
+     font-size: 1rem;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: rgba(20, 19, 19, 0.811);
+    text-decoration: none;
+}
+
+.bian {
+    padding: 1rem 3rem;
+    background-color: rgb(117, 29, 29)
+}
+
+.bian .logo,
+.tou.bian a {
+    color: rgb(252, 247, 247);
+}
+
+.bjimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0
+}
+.box0 {
+    height: 70px;
+    background-color: rgb(180, 48, 48);
+}
+
+#logo {
+    width: 300px;
+    height: 70px;
+}
+
+.box1 {
+    margin: 30px;
+    height: 500px;
+}
+.sushepicture{
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+h5{
+	font-size: 25px;
+	font-weight: 800;
+}
+h4 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+p {
+    color: rgba(20, 19, 19, 0.811)
+}
+@page {
+    size: 150mm 297mm;
+    margin: 20px;
+  }
+h5 {
+    font-size: 25px;
+    font-weight: 800;
+}
+table tr td p {
+    font-size: 25px;
+    font-weight: 800;
+
+}
+  

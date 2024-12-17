@@ -1,0 +1,88 @@
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif; /* 修正字体设置，使用更通用的字体 */
+      background-image: linear-gradient(to right,
+          #ffe9b3de,
+          #e3c297ce,
+          #ecd9a7,
+          #f8edcfd8,
+          #fbf3dd);
+    }
+
+   .parallax {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      background-attachment: fixed;
+    }
+
+   .p1 {
+      background-image: url(../img/fengmian.jpg);
+    }
+
+   .shouye {
+      background-color: linear-gradient(to right, #f9dfdf, #f4c5c5, #db3d3d23, #c8808025, #c7606022);
+      text-align: center;
+    }
+
+   .ziti1 {
+      font-family: Arial, sans-serif; 
+      font-size: 36px; 
+      color: rgb(12, 136, 244);
+      font-weight: 200;
+    }
+
+   
+   .daohang {
+      background-color: linear-gradient(to right, #f9dfdf, #f4c5c5, #db3d3d23, #c8808025, #c7606022);
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+   .outer {
+       background-color: #7e2424dc;
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+    }
+
+  
+   .inter {
+      background-color: rgb(241, 207, 192);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      padding: 10px;
+      margin: 10px 0; 
+      width: 300px; 
+      text-align: center;
+    }
+
+   .column1 {
+      padding: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+     .inter {
+        width: 300px;
+      }
+    }
+
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+     .inter {
+        width: 45%; 
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+     .inter {
+        width: 100%; 
+      }
+    }
