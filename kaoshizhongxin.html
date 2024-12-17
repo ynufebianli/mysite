@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>考试中心</title>
+ 
+   <link rel="stylesheet" href="css/kaoshi.css">
+   <script src="js/jiaowu.js"></script>
+</head>
+<body>
+	<div>
+	<div class="bjimg"></div>
+	    <div class="tou">
+	        <img class="logo" src="https://www.ynufe.edu.cn/images/logo.png" width=25%>
+	        <ul class="biao">
+	            <li><a href="index.html">首页</a></li>
+	            <li><a href="jiaowu.html">教务</a></li>
+	            <li><a href="kaoshizhongxin.html">考试</a></li>
+	            <li><a href="xuexiaojieshao.html">学校介绍</a></li>
+	        </ul>
+	    </div>
+		</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div id="app">
+    <h2 class="biaoti">考试中心</h2>
+    <select id="dropdown" >
+      <option value="siteList1">请选择学院</option>
+      <option value="siteList2">财政与公共管理学院</option>
+      <option value="siteList3">经济学院</option>
+      <option value="siteList4">金融学院</option>
+      <option value="siteList5">商学院</option>
+      <option value="siteList6">会计学院</option>
+      <option value="siteList7">旅游与酒店管理学院</option>
+      <option value="siteList8">信息学院</option>
+      <option value="siteList9">统计与数学学院</option>
+      <option value="siteList10">物流与管理工程学院</option>
+      <option value="siteList11">法政学院</option>
+      <option value="siteList12">国际语言文化学院</option>
+      <option value="siteList13">传媒与设计艺术学院</option>
+    </select>
+
+		  <table>
+			<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+			<tr><td>3月-4月</td><td rowspan="2"><a href="https://cet-bm.neea.edu.cn/" target="_blank">四六级考试</a></td><td>6月</td></tr>
+		    <tr><td>9月-10月</td><td>12月</td></tr>
+			<tr><td>1月-12月</td><td><a href="https://www.chinaielts.org/apply" target="_blank">雅思考试</a></td><td>每周六</td></tr>
+			<tr><td>6月</td><td><a href="https://ncre.neea.edu.cn/" target="_blank">计算机考试</a></td><td>9月</td></tr>
+			<tr><td>9月-10月</td><td><a href="https://xjwis.ynufe.edu.cn/" target="_blank">普通话考试</a></td><td>9月、11月、12月</td></tr>
+			<tr><td>1月</td><td ><a href="http://kzp.mof.gov.cn/" target="_blank">会计资格等级考试</a></td><td>5月</td></tr>
+			<tr><td>4月</td><td><a href="https://www.cicpa.org.cn/ztzl1/exam/" target="_blank">注册会计师考试</a></td><td>8月、10月</td></tr>
+			<tr><td>1月</td><td rowspan="2"><a href="https://ntce.neea.edu.cn/" target="_blank">教师资格证考试</a></td><td>3月</td></tr>
+			<tr><td>9月</td><td>11月</td></tr>
+			<tr><td>9月-10月</td><td><a href="https://yz.chsi.com.cn/yzwb/" target="_blank">研究生考试</a></td><td>12月</td></tr>
+			<tr><td>9月-10月</td><td><a href="https://gjzwfw.www.gov.cn/col/col890/index.html" target="_blank">专业技术人员职业资格考试服务专区</a></td><td>9月、11月、12月</td></tr>
+		    <tr><td>10月</td><td><a href="http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/home/gkhome.html" target="_blank">公务员考试（国考）</a></td><td>12月</td></tr>
+		  
+		  </table>
+ 
+ 
+    <script>
+       const dropdown = document.getElementById('dropdown');
+       dropdown.addEventListener('change', function() {
+         const selectedValue = this.value;
+         const table = document.querySelector('table');
+         table.innerHTML = `<tr><td>${selectedValue}</td></tr>`;
+         if (selectedValue === 'siteList1') {
+           table.innerHTML += `	<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	<tr><td>3月-4月</td><td rowspan="2"><a href="https://cet-bm.neea.edu.cn/">四六级考试</a></td><td>6月</td></tr>
+        <tr><td>9月-10月</td><td>12月</td></tr>
+       	<tr><td>1月-12月</td><td><a href="https://www.chinaielts.org/apply">雅思考试</a></td><td>每周六</td></tr>
+       	<tr><td>6月</td><td><a href="https://ncre.neea.edu.cn/">计算机考试</a></td><td>9月</td></tr>
+       	<tr><td>9月-10月</td><td><a href="https://xjwis.ynufe.edu.cn/">普通话考试</a></td><td>9月、11月、12月</td></tr>
+       	<tr><td>1月</td><td><a href="http://kzp.mof.gov.cn/">会计资格等级考试</a></td><td>5月</td></tr>
+       	<tr><td>4月</td><td><a href="https://www.cicpa.org.cn/ztzl1/exam/">注册会计师考试</a></td><td>8月、10月</td></tr>
+       	<tr><td>1月</td><td  rowspan="2"><a href="https://ntce.neea.edu.cn/">教师资格证考试</a></td><td>3月</td></tr>
+       	<tr><td>9月</td><td>11月</td></tr>
+       	<tr><td>9月-10月</td><td><a href="https://yz.chsi.com.cn/yzwb/">研究生考试</a></td><td>12月</td></tr>
+       	<tr><td>9月-10月</td><td><a href="https://gjzwfw.www.gov.cn/col/col890/index.html">专业技术人员职业资格考试服务专区</a></td><td>9月、11月、12月</td></tr>
+		<tr><td>10月</td><td><a href="http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/home/gkhome.html">公务员考试（国考）</a></td><td>12月</td></tr>`;
+         } else if (selectedValue === 'siteList2') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>5月</td><td> <a href="https://site1-1.com">税务师职业资格考试</a></td><td>11月</td></tr>`;
+         }else if (selectedValue === 'siteList3') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>8月</td><td> <a href="http://www.cpta.com.cn/">初级经济师证书</a></td><td>11月</td></tr>
+                               <tr><td>11月</td><td> <a href="http://www.cpta.com.cn/">特许金融分析师（CFA)证书</a></td><td>次年2月</td></tr>`;
+         } else if (selectedValue === 'siteList4') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                    <tr><td>4月</td><td> <a href="http://baoming.amac.org.cn">基金从业资格证书</a></td><td>5月</td>
+                               <tr><td>6月</td><td> <a href="https://www.sac.net.cn/">证券从业资格证书</a></td><td>7月</td>`;
+         }else if (selectedValue === 'siteList5') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>2月</td><td><a href="http://cpta.mohrss.gov.cn/">人力资源管理师证书</a></td><td>5月</td>
+                               <tr><td>8月</td><td><a href="Http://cmat.cmat.org.cn">营销师证书</a></td><td>11月</td>`;
+         }else if (selectedValue === 'siteList6') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>1月</td><td>  <a href="https://cn.accaglobal.com/">国际注册会计师（ACCA)</a></td><td>3月</td>
+                               <tr><td>1月</td><td> <a href="https://www.ciia.com.cn/">注册内部审计师（CIA)证书</a></td><td>3月</td>`;
+         }else if (selectedValue === 'siteList7') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>7-8月</td><td> <a href="https://mr.mct.gov.cn">导游证</a></td><td>11月</td>
+                               <tr><td>1月</td><td> <a href="https://www.chrdc.cn/kszs/zsl-h/8667.html">酒店管理师证书</a></td><td>3月</td>`;
+         }else if (selectedValue === 'siteList8') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>3月和8月</td><td> <a href="http://www.cpta.com.cn/">计算机技术与软件专业资格证书</a></td><td>5月和11月</td>
+                               <tr><td>3月和8月</td><td> <a href="https://www.ruankao.org.cn/">数据库系统工程师证书</a></td><td>5月和11月</td>`;
+         }else if (selectedValue === 'siteList9') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>1月</td><td><a href="http://www.cpta.com.cn">统计专业技术资格证书</a></td><td>3月</td>
+                               <tr><td>1月</td><td> <a href="https://www.e-caa.org.cn">精算师资格证书</a></td><td>3月</td>`;
+         }else if (selectedValue === 'siteList10') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>1月</td><td> <a href="www.cicp.com.cn">物流师证书</a></td><td>3月</td>
+                               <tr><td>1月</td><td><a href="https://event.chinapmp.cn/PMP/LEAP/pmp/html/index.html">项目管理专业人士资格认证</a></td><td>3月</td>`;
+         }else if (selectedValue === 'siteList11') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>6月</td><td>  <a href="https://www.moj.gov.cn/">法律职业资格证书</a></td><td>9月和10月</td>
+                               <tr><td>1月</td><td>  <a href="www.moj.gov.cn">企业法律顾问职业资格证书</a></td><td>3月</td>`;
+         }else if (selectedValue === 'siteList12') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                    <tr><td>1月</td><td><a href="www.cpta.com.cn">翻译专业资格证书</a></td><td>3月</td>
+                               <tr><td>1月</td><td><a href="http://bec.neea.edu.cn">剑桥商务英语证书</a></td><td>3月</td>`;
+         }else if (selectedValue === 'siteList13') {
+           table.innerHTML += `<tr><th>报名时间</th><th>考试名称</th><th>考试时间</th></tr>
+       	                       <tr><td>1月</td><td><a href="https://www.chrdc.cn/kszs/zsl-h/8677.html">广告设计师证书</a></td><td>3月</td>
+                               <tr><td>1月</td><td><a href="https://www.adobeacp.com/content/news?id=1708597031414240">平面设计师证书</a></td><td>3月</td>`;
+         }
+       });
+      </script>
+</body>
+</html>
